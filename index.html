@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Form checker</title>
+  </head>
+  <body>
+    <div class="app">
+      <p class="circle"></p>
+      <form>
+        <input type="text" placeholder="Pseudo" id="pseudo" />
+        <p class="pseudo-controler"></p>
+        <input type="text" id="email" placeholder="Email" />
+        <p class="email-controler"></p>
+        <input type="password" id="password" placeholder="Mot de passe" />
+        <div class="password-controler">
+          <p class="verify"></p>
+        </div>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          placeholder="Confirmer le mot de passe"
+        />
+        <p class="password-verify"></p>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
