@@ -107,12 +107,6 @@ export const controllorPassword = (value, spanElement, progressBar) => {
 };
 
 export const controllorConfirmPassword = (value, element) => {
-  // // Vérifie que userData est accessible et que password est défini
-  // if (typeof userData === "undefined" || !userData.password) {
-  //   console.error("userData ou password non défini.");
-  //   return;
-  // }
-
   const { password } = userData;
 
   if (!value) {
@@ -155,6 +149,4 @@ export const controllorCity = (value, element) => {
     userData.city = value;
     element.textContent = ""; // Effacer le message d'erreur si la validation réussit
   }
-
-  console.log(value.length);
 };
