@@ -1,87 +1,26 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* Styles de la barre de progression */
+#progress-bar {
+  width: 0; /* Largeur initiale */
+  height: 5px; /* Hauteur de la barre */
+  transition: width 0.3s ease; /* Transition douce pour le changement de largeur */
 }
 
-body {
-  background-color: rgb(199, 241, 241);
+/* Classe pour un mot de passe faible (moins de 8 caractères) */
+.redBar {
+  background-color: red;
+  width: 33%;
 }
 
-.app {
-  background: rgb(7, 201, 201);
-  width: 70%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 90px;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 6px 0px 15px 0px #9b9595;
+/* Classe pour un mot de passe acceptable (entre 8 et 15 caractères) */
+.orangeBar {
+  background-color: orange;
+  width: 66%; /* Couleur pour un mot de passe acceptable */
 }
 
-p {
-  color: red;
+/* Classe pour un mot de passe fort (16 caractères ou plus) */
+.greenBar {
+  background-color: green;
+  width: 100%; /* Couleur pour un mot de passe fort */
 }
 
-.circle {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 70px;
-  left: 50%;
-  right: 100px;
-}
-
-input {
-  margin: 20px;
-  background: white;
-  border-radius: 10px;
-  height: 30px;
-  border: none;
-  padding: 5px;
-  width: 50%;
-}
-
-input[type="submit"] {
-  width: 175px;
-  background: rgb(213, 213, 250);
-  text-transform: uppercase;
-}
-
-.password-controler {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.verify {
-  transition: 0.5s;
-  width: 0;
-  border-radius: 10px;
-
-  transform-origin: left;
-}
-
-.red {
-  background: red;
-  width: 25%;
-  height: 10px;
-}
-
-.yellow {
-  background: rgb(248, 248, 183);
-  width: 50%;
-  height: 10px;
-}
-
-.yellowgreen {
-  background: rgb(184, 230, 94);
-  width: 75%;
-  height: 10px;
-}
-.green {
-  background: rgb(61, 235, 61);
-  width: 100%;
-  height: 10px;
-}
+/* Styles pour les messages d'erreur */
